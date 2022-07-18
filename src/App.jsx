@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 function App() {
+
+  const [count,setCount] = useState(20);
+
   const message = <h1>Hello le monde</h1>;
   const message2 = (
     <div>
@@ -21,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title="La World Company" texte="React JS fonde par Facebook"/>
+      <Header title="La World Company" texte="React JS fonde par Facebook" />
       {message}
       {message2}
       {calcul}
@@ -37,6 +41,10 @@ function App() {
           <li key={voiture.id}>{voiture.nom}</li>
         ))}
       </ul>
+      <div>
+        <p>Vous avez appuyer sur le bouton ci dessous {count} fois.</p>
+        <button onClick={() => setCount(count + 1)}>Incrementer</button>
+      </div>
       <Footer />
     </div>
   );
