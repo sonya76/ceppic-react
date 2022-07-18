@@ -25,6 +25,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src="/assets/img/logo512.png" /> 
       <Header title="La World Company" texte="React JS fonde par Facebook" />
       {message}
       {message2}
