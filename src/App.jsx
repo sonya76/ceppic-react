@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header title="La World Company" texte="React JS fonde par Facebook"/>
       {message}
       {message2}
       {calcul}
@@ -36,6 +37,7 @@ function App() {
           <li key={voiture.id}>{voiture.nom}</li>
         ))}
       </ul>
+      <Footer />
     </div>
   );
 }
