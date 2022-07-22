@@ -1,8 +1,10 @@
 # Installation et lancement d'une nouvelle application React
 
-`npx create-react-app mon-application
-cd 
-npm start`
+```
+npx create-react-app mon-application
+cd mon-application
+npm start
+```
 
 # Getting Started with Create React App
 
