@@ -16,7 +16,7 @@ export default function RandomUser() {
     <div className="randomusers">
       {users.map((user) => (
         <figure key={user.id.value}>
-          <img src={user.picture.large} alt="" />
+          <img src={user.picture.large} alt={user.name.first} />
           <figcaption>
             <div>{user.name.first} {user.name.last}</div>
             <div>{user.email}</div>
