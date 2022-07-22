@@ -2,7 +2,7 @@ import "./App.css";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import RandomUser from "./components/RandomUser";
+import RandomUser from "./components/RandomUsers";
 import Users from "./components/Users";
 
 function App() {
