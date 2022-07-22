@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export default function BoutonIncremente() {
-  const [count, setCount] = useState(0);
+export default function BoutonIncremente({texte,nb}) {
+  const [count, setCount] = useState(nb);
 
   function handleIncremente() {
     setCount(count + 1);
@@ -9,7 +9,7 @@ export default function BoutonIncremente() {
 
   return(
   <>
-    <p>Vous avez appuyer sur le bouton ci dessous {count} fois.</p>
+    <p>{texte} {count}</p>
     <button onClick={handleIncremente}>Incrementer {count}</button>
   </>
   )

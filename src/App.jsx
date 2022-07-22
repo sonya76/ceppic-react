@@ -29,9 +29,9 @@ function App() {
       <img src="/assets/img/logo512.png" style={{ 
         width: '60px', 
         height: '60px',
-        border: 'solid 2px red'}} /> 
+        border: 'solid 2px red'}} alt="React" /> 
 
-      <BoutonIncremente />
+      <BoutonIncremente texte="Le nombre de fois que le bouton soit clické : " nb={45} />
 
       <Header title="La World Company" texte="React JS fonde par Facebook" />
 
