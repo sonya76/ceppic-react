@@ -1,5 +1,8 @@
 export default function Contact() {
-    return (
-        <h1>Contact</h1>
-    )
-};
+  return (
+    <>
+      <br />
+      <h1>Contact</h1>
+    </>
+  );
+}
